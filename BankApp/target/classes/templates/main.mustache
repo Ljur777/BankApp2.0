@@ -1,0 +1,27 @@
+<html>
+
+<body>
+<!--<Блок для выхода из аккаунта-->
+<div>
+    <form action="/logout" method="post">
+        <input type="submit" value="Log Out"/>
+    </form>
+</div>
+<div>
+    <!--<Блок для ввода транзакций и имени отправителя-->
+    <form method="post">
+        <input type="desc" name="recipient" placeholder="Recipient">
+        <input type="desc" name="amount" placeholder="Amount">
+        <input type="desc" name="description" placeholder="Input transaction description">
+        <button type="submit">Add</button>
+    </form>
+</div>
+<div>Transactions</div>
+<!--<Блок для вывода сообщений-->
+<form method="post" action="all">
+    <input type="desc" name="all">
+    <button type="submit">Find</button>
+</form>
+
+</body>
+</html>
